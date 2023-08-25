@@ -16,5 +16,5 @@ To run locally in any IDE
 
 To run Docker container locally
 - build the docker image using cmd "docker build -f Dockerfile"
-- run the image in Docker Desktop "docker run <image-name>"
+- run the image in Docker Desktop "docker run [image-name]"
 
