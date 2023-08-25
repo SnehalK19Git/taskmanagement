@@ -1,0 +1,14 @@
+com\simplesystems\taskmanagement\exception\TaskNotAvailableException.class
+com\simplesystems\taskmanagement\entity\Task.class
+com\simplesystems\taskmanagement\dto\TaskStatus.class
+com\simplesystems\taskmanagement\exception\TaskNotAvailableExceptionSupplier.class
+com\simplesystems\taskmanagement\service\TaskManagementService.class
+com\simplesystems\taskmanagement\dto\TaskDTO.class
+com\simplesystems\taskmanagement\dto\TaskCreateDTO.class
+com\simplesystems\taskmanagement\exception\handlers\CustomErrorResponse.class
+com\simplesystems\taskmanagement\exception\handlers\TaskManagementExceptionHandler.class
+com\simplesystems\taskmanagement\scheduler\TaskSatusUpdateScheduler.class
+com\simplesystems\taskmanagement\controller\TaskManagementController.class
+com\simplesystems\taskmanagement\repository\TaskRepository.class
+com\simplesystems\taskmanagement\TaskManagementApplication.class
+com\simplesystems\taskmanagement\mapper\TaskDTOMapper.class

@@ -1,0 +1,14 @@
+D:\MyWorkspace\task-management\task-management\src\main\java\com\simplesystems\taskmanagement\repository\TaskRepository.java
+D:\MyWorkspace\task-management\task-management\src\main\java\com\simplesystems\taskmanagement\scheduler\TaskSatusUpdateScheduler.java
+D:\MyWorkspace\task-management\task-management\src\main\java\com\simplesystems\taskmanagement\exception\handlers\TaskManagementExceptionHandler.java
+D:\MyWorkspace\task-management\task-management\src\main\java\com\simplesystems\taskmanagement\dto\TaskCreateDTO.java
+D:\MyWorkspace\task-management\task-management\src\main\java\com\simplesystems\taskmanagement\exception\TaskNotAvailableException.java
+D:\MyWorkspace\task-management\task-management\src\main\java\com\simplesystems\taskmanagement\controller\TaskManagementController.java
+D:\MyWorkspace\task-management\task-management\src\main\java\com\simplesystems\taskmanagement\service\TaskManagementService.java
+D:\MyWorkspace\task-management\task-management\src\main\java\com\simplesystems\taskmanagement\dto\TaskDTO.java
+D:\MyWorkspace\task-management\task-management\src\main\java\com\simplesystems\taskmanagement\exception\handlers\CustomErrorResponse.java
+D:\MyWorkspace\task-management\task-management\src\main\java\com\simplesystems\taskmanagement\entity\Task.java
+D:\MyWorkspace\task-management\task-management\src\main\java\com\simplesystems\taskmanagement\exception\TaskNotAvailableExceptionSupplier.java
+D:\MyWorkspace\task-management\task-management\src\main\java\com\simplesystems\taskmanagement\TaskManagementApplication.java
+D:\MyWorkspace\task-management\task-management\src\main\java\com\simplesystems\taskmanagement\mapper\TaskDTOMapper.java
+D:\MyWorkspace\task-management\task-management\src\main\java\com\simplesystems\taskmanagement\dto\TaskStatus.java
