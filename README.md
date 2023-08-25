@@ -14,7 +14,12 @@ This is Spring Boot Docker containerized project . It serves the endpoints for m
 To run locally in any IDE
 - clone the project and simply run the TaskManagementApplication class
 
-To run Docker container locally
-- build the docker image using cmd "docker build -f Dockerfile"
+To build and run Docker container locally 
+- checkout project
+- build the docker image using cmd "docker buildx build ."
 - run the image in Docker Desktop "docker run [image-name]"
+
+To run application jar file without code checkout
+- Run command "docker build https://github.com/SnehalK19Git/taskmanagement.git#main -f Dockerfile" 
+- Run command "docker run [image-name]"
 
