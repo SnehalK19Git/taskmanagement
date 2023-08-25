@@ -14,11 +14,12 @@ public class TaskSatusUpdateScheduler {
 @Autowired
 private TaskManagementService service;
 Logger logger = LogManager.getLogger(TaskManagementService.class);
-	//@Scheduled(cron = "0 15 12 * * ?")
-@Scheduled(fixedDelay=1000)
-	public void launchJob() throws Exception {
-	logger.debug("Scheduler started");
-	    service.updateTasksToPastDueDate();
+	
+@Scheduled(cron = "0 15 12 * * ?")
+    public void launchJob() throws Exception {
+	logger.debug("Scheduled job started");
+	service.updateTasksToPastDueDate();
+	logger.debug("Scheduled job ended");
 	}
 
 }
