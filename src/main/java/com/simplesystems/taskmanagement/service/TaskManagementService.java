@@ -6,7 +6,6 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,6 +13,7 @@ import com.simplesystems.taskmanagement.dto.CreateTaskDTO;
 import com.simplesystems.taskmanagement.dto.TaskDTO;
 import com.simplesystems.taskmanagement.dto.TaskStatus;
 import com.simplesystems.taskmanagement.entity.Task;
+import com.simplesystems.taskmanagement.exception.InvalidTaskException;
 import com.simplesystems.taskmanagement.mapper.TaskDTOMapper;
 import com.simplesystems.taskmanagement.repository.TaskRepository;
 
@@ -45,7 +45,7 @@ public class TaskManagementService {
 		return mapper.mapToTaskDTO(taskRepository.save(task));
 	}
 
-	@Transactional(propagation=Propagation.REQUIRES_NEW,isolation = Isolation.READ_COMMITTED)
+	@Transactional(propagation=Propagation.REQUIRES_NEW)
 	public TaskDTO updateTask(
 			TaskDTO taskUpdateRequestDTO) {
 		
@@ -56,7 +56,7 @@ public class TaskManagementService {
 
 	@Transactional(readOnly=true)
 	public TaskDTO getTask(Long taskId) {
-		return mapper.mapToTaskDTO(taskRepository.findById(taskId).get());
+		return mapper.mapToTaskDTO(taskRepository.findById(taskId).orElseThrow(() -> new InvalidTaskException()));
 	}
 
 	@Transactional
