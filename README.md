@@ -23,3 +23,10 @@ To run application jar file without code checkout
 - Run command "docker build https://github.com/SnehalK19Git/taskmanagement.git#main -f Dockerfile" 
 - Run command "docker run [image-name]"
 
+**Steps to enhance project to PROD ready version**
+- Increase Code Coverage
+- Integration tests
+- Delete API addition
+- Addition of Spring Profiles
+- MySQL DB migration 
+
